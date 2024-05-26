@@ -10,7 +10,7 @@ def predict_cancer(Clubbing_of_Finger_Nails,Age,Smoking,Wheezing,Fatigue,Passive
     return prediction
 def main():
     st.title("Lung Cancer Prediction")
-    image_path="E:\DataScience\Cancer\cancerimage.jpg"
+    image_path="E:\\DataScience\\Cancer\\cancerimage.jpg"
     st.image(image_path,caption="LUNG CANCER",use_column_width=True)
     html_temp = """
     <div style="background:#025246 ;padding:10px">
