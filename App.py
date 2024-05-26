@@ -11,7 +11,7 @@ def predict_cancer(Clubbing_of_Finger_Nails,Age,Smoking,Wheezing,Fatigue,Passive
     return prediction
 def main():
     st.title("Lung Cancer Prediction")
-    image_path="E:\\DataScience\\Cancer\\cancerimage.jpg"
+    image_path="cancerimage.jpg"
  
     # Load the image using PIL
     image = Image.open(image_path)
