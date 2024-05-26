@@ -1,5 +1,6 @@
 import pickle
 import streamlit as st
+from PIL import Image
 import numpy as np
 pickle_in=open("Model.pkl","rb")
 model=pickle.load(pickle_in)
@@ -11,7 +12,13 @@ def predict_cancer(Clubbing_of_Finger_Nails,Age,Smoking,Wheezing,Fatigue,Passive
 def main():
     st.title("Lung Cancer Prediction")
     image_path="E:\\DataScience\\Cancer\\cancerimage.jpg"
-    st.image(image_path,caption="LUNG CANCER",use_column_width=True)
+ 
+    # Load the image using PIL
+    image = Image.open(image_path)
+    
+    # Display the image in Streamlit
+    st.image(image, caption='Lung Cancer', use_column_width=True)
+    
     html_temp = """
     <div style="background:#025246 ;padding:10px">
     <h2 style="color:white;text-align:center;">Lung Cancer Prediction ML App </h2>
